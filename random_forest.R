@@ -40,6 +40,7 @@ mydata$used <- as.factor(mydata$used)
 
 #===============================================================================
 
+# manually splitting the data to run in paralell if needed. i had problems remerging the model so it needs work
 # consider this code to run on full data then combine:
 # rf1 <- randomForest(used ~ ., mydata[1:500000,c(4,5:17)], ntree=500, norm.votes=FALSE, do.trace=10,importance=TRUE)
 # saveRDS(rf1, "rf_full_data_chunks/rf1.rds")
