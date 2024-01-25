@@ -168,6 +168,7 @@ partialPlot(RFM, pred.data = mydata, x.var = "puma_northernness")
 #-----------------------------------------------------------------------
 
 ## interactive plots
+# these take forever to load
 # degree2=TRUE plots intractions 
 partial_plots <- plotmo(RFM, pmethod = "partdep", degree1 = FALSE, degree2 = TRUE, ylim = c(1,2)) 
 
